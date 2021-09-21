@@ -1,5 +1,8 @@
 #NoEnv
 
+If !FileExist("fon.bmp")
+	URLDownloadToFile, github.com/Dalersion/ahk_telek/raw/main/telek.png
+
 WM_LBUTTONDOWN()
 {
 	WM_NCLBUTTONDOWN := 0xA1, HTCAPTION := 2
